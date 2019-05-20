@@ -130,7 +130,15 @@ the data frame DATA was then created by binding the test and training data
 cleaning the data
 
 Activities are given descriptive labels to replace the numerical values in original data
-variable names are changed into lower case and "-" are removed
+1 WALKING
+2 WALKING_UPSTAIRS
+3 WALKING_DOWNSTAIRS
+4 SITTING
+5 STANDING
+6 LAYING
+
+variable names are changed into lower case 
+"-" are removed
 
 
 
