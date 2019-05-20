@@ -1,4 +1,5 @@
-Clean Data Project Code Book
+Clean Data Project 
+Code Book
 
 The data linked to from the course website represent data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
@@ -33,6 +34,8 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+
+
 
 
 
@@ -98,13 +101,23 @@ Variable names for the measurements taken are taken from the features file:
 
 
 
-run_analysis.R steps
+
+
+run_analysis.R
+
+steps
+
+
 set up
+
 libraries dplyr and plyr are used
 the data is downloaded and unzipped
 files listed above are read in
 
+
+
 putting together the file info
+
 Variable names for the measurements taken are taken from the features file 
 30 subjects are included in this data
 y_test and y_train provide the activity code data
@@ -112,15 +125,23 @@ test files data were compiled together
 training files data were compiled together
 the data frame DATA was then created by binding the test and training data
 
+
+
 cleaning the data
+
 Activities are given descriptive labels to replace the numerical values in original data
 variable names are changed into lower case and "-" are removed
 
+
+
 extract wanted mreasurements to finish first desired data set named DATA
+
 subjects and activities are kept along with only mean and std measurements
 
 
+
 DATA contains 10299 obs and 88 variables
+
  names(DATA)
  [1] "tbodyaccmean()x"                      "tbodyaccmean()y"                     
  [3] "tbodyaccmean()z"                      "tbodyaccstd()x"                      
@@ -168,12 +189,18 @@ DATA contains 10299 obs and 88 variables
 [87] "subject"                              "activities"  
 
 
+
+
+
 Forming the second data frame DATA2
+
 get the mean of each measurement from DATA grouped by subject 
 get the mean of each measurement from DATA grouped by activity
 merge the two results
 
+
 DATA2 contains 36 observations and 88 variables
+
 names(DATA2)
  [1] "subject"                              "activity"                            
  [3] "tbodyaccmean()x"                      "tbodyaccmean()y"                     
