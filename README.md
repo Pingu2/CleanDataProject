@@ -1,6 +1,6 @@
 # CleanDataProject
 
-CleanDataProject contains an R script called run_analysis.R and CleanDataProjectCodeBook
+CleanDataProject contains an R script called run_analysis.R and CodeBook.md
 
 run_analysis.R 
 inputs data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
